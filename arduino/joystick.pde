@@ -2,7 +2,7 @@
 
 Joystick Hack
 
-Mark Roland <mark@markroland.com>
+Mark Roland, markroland.com
 
 11/29/2011 - Borrowed code from Button example
 11/30/2011 - Update to include y2_axis data and remove extra code
@@ -39,6 +39,7 @@ void loop(){
   int y2_axis = analogRead(A2);
   
   // Output data to Serial port
+  // Example: <780 820 923 0 1>
   Serial.print("<");
   Serial.print(x1_axis, DEC);
   Serial.print(" ");
@@ -51,6 +52,6 @@ void loop(){
   Serial.print(s2_state, DEC);
   Serial.print(">\n");
   
-  // Delay for 20 milliseconds (this isn't necessary)
+  // Delay for 20 milliseconds (this isn't necessary, but helps throttle the data being sent)
   delay(20);   
 }
