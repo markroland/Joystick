@@ -4,6 +4,8 @@ Joystick Hack
 
 Mark Roland, markroland.com
 
+Written in Arduino 0021
+
 11/29/2011 - Borrowed code from Button example
 11/30/2011 - Update to include y2_axis data and remove extra code
 
